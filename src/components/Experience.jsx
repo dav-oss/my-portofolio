@@ -18,7 +18,7 @@ export default function Experience() {
           <p className="text-sm text-gray-500">Sep 2024 – Present</p>
           <ul className="list-disc list-inside mt-2">
             <li>Demonstrated professionalism, communication, and accuracy in a fast-paced public environment</li>
-            <li>Developed interpersonal and communication skills.</li>
+            <li>Developed interpersonal and communication skills</li>
           </ul>
         </div>
       </div>
