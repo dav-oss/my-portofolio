@@ -3,9 +3,9 @@ import profilePic from '../assets/profile.jpg';
 
 export default function Hero() {
   return (
-    <section class="bg-gray-100 dark:bg-gray-700 gap-6 flex items-center justify-center">
+    <section class="bg-gray-100 dark:bg-gray-700 py-12 flex items-center justify-center">
   <div
-    class="bg-gray-100 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
+    class="bg-gray-100 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl py-10 transition-all duration-500 transform">
     <div class="flex items-center gap-4">
       <img src={profilePic}
       alt='David Muendo'
