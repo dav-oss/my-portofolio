@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import profilePic from '../assets/profile.jpg';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="fixed top-0 left-0 w-full bg-primary/80 backdrop-blur-lg shadow-classy z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,13 +25,27 @@ export default function Nav() {
             <Link to="/contact" className="text-accent hover:text-highlight font-semibold transition">Contact</Link>
           </div>
           <div className="md:hidden">
-            <button className="text-accent hover:text-highlight focus:outline-none">
+            <button
+              className="text-accent hover:text-highlight focus:outline-none"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+            >
               <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
               </svg>
             </button>
           </div>
         </div>
+        {/* Mobile menu */}
+        {menuOpen && (
+          <div className="md:hidden bg-primary/95 rounded-b-xl shadow-classy px-4 py-4 flex flex-col space-y-4 animate-fade-in-up">
+            <Link to="/about" className="text-accent hover:text-highlight font-semibold transition" onClick={() => setMenuOpen(false)}>About</Link>
+            <Link to="/skills" className="text-accent hover:text-highlight font-semibold transition" onClick={() => setMenuOpen(false)}>Skills</Link>
+            <Link to="/certifications" className="text-accent hover:text-highlight font-semibold transition" onClick={() => setMenuOpen(false)}>Certifications</Link>
+            <Link to="/blog" className="text-accent hover:text-highlight font-semibold transition" onClick={() => setMenuOpen(false)}>Blog</Link>
+            <Link to="/contact" className="text-accent hover:text-highlight font-semibold transition" onClick={() => setMenuOpen(false)}>Contact</Link>
+          </div>
+        )}
       </div>
     </nav>
   );
