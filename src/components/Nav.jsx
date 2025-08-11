@@ -1,58 +1,36 @@
-import React from "react"
+import React from "react";
 import profilePic from '../assets/profile.jpg';
-
-
+import {Link} from 'react-router-dom';
 
 export default function Nav() {
-    return (
-        <nav className="fixed top-0 left-0 w-full bg-white/30 backdrop-blur-md shadow-md">
+  return (
+    <nav className="fixed top-0 left-0 w-full bg-primary/80 backdrop-blur-lg shadow-classy z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <img src={profilePic}
-                alt='David Muendo'
-                class="w-12 group-hover:w-12 group-hover:h-12 h-12 object-left object-cover rounded-full transition-all duration-500 delay-500 transform"
-                />
-          <div className="text-xl font-bold text-gray-800">David Musau</div>
-          
-
-          {/* Navigation Links */}
-          <div className="hidden md:flex space-x-6">
-
-            <a href="#about" className="text-gray-700 hover:text-gray-900">
-              Skills
-            </a>
-            <a href="#services" className="text-gray-700 hover:text-gray-900">
-              Certifications
-            </a>
-            <a href="#contact" className="text-gray-700 hover:text-gray-900">
-              Contact
-            </a>
-
+          <Link to="/" className="flex items-center gap-3">
+            <img
+              src={profilePic}
+              alt="David Muendo"
+              className="w-12 h-12 object-cover rounded-full border-2 border-accent"
+            />
+            <span className="font-display text-2xl font-bold text-accent">David Musau</span>
+          </Link>
+          <div className="hidden md:flex space-x-8">
+            <Link to="/about" className="text-accent hover:text-highlight font-semibold transition">About</Link>
+            <Link to="/skills" className="text-accent hover:text-highlight font-semibold transition">Skills</Link>
+            <Link to="/certifications" className="text-accent hover:text-highlight font-semibold transition">Certifications</Link>
+            <Link to="/blog" className="text-accent hover:text-highlight font-semibold transition">Blog</Link>
+            <Link to="/contact" className="text-accent hover:text-highlight font-semibold transition">Contact</Link>
           </div>
-
-
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button className="text-gray-700 hover:text-gray-900 focus:outline-none">
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
+            <button className="text-accent hover:text-highlight focus:outline-none">
+              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
               </svg>
             </button>
           </div>
         </div>
       </div>
     </nav>
-    );
+  );
 }
