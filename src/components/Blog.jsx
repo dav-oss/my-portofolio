@@ -2,8 +2,16 @@ import React from "react";
 
 const posts = [
   {
+    title: "Cisco CVSS 10.0 FMC RADIUS Flaw Allowing Remote Code Execution",
+    date: "August 2025",
+    summary:
+      "A critical vulnerability in Cisco's Firepower Management Center (FMC) allows unauthenticated remote code execution via RADIUS. The flaw, rated CVSS 10.0, affects multiple versions of FMC and requires immediate patching to prevent exploitation.",
+    link: "https://thehackernews.com/2025/08/cisco-warns-of-cvss-100-fmc-radius-flaw.html",
+  }
+  ,
+  {
     title: "DEFCON 33: The World's Largest Hacker Conference",
-    date: "August 2023",
+    date: "August 2025",
     summary:
       "DEFCON 33 brought together hackers, researchers, and security professionals from around the globe. Highlights included talks on AI security, hardware hacking villages, and the latest in vulnerability research. The event fostered collaboration and showcased cutting-edge cybersecurity trends.",
     link: "https://defcon.org/html/defcon-33/dc-33-index.html",
