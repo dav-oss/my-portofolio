@@ -23,6 +23,60 @@ const posts = [
       "A critical backdoor was discovered in XZ Utils (liblzma), affecting Linux distributions. The vulnerability allowed remote code execution via SSH. Major distros quickly patched the issue, highlighting the importance of supply chain security.",
     link: "https://www.cve.org/CVERecord?id=CVE-2024-3094",
   },
+  {
+    "title": "CVE-2025-42957: SAP S/4HANA Command Injection",
+    "date": "August 2025",
+    "summary": "A critical command injection vulnerability (CVSS 9.9) in SAP S/4HANA ERP allowed system takeover. Actively exploited, now patched by SAP.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-42957"
+  },
+  {
+    "title": "CVE-2025-38352 & CVE-2025-48543: Android Zero-Days",
+    "date": "September 2025",
+    "summary": "Two Android elevation-of-privilege zero-day vulnerabilities were exploited in the wild. Google patched them in the September security update.",
+    "link": "https://source.android.com/security/bulletin/2025-09-01"
+  },
+  {
+    "title": "CVE-2025-24204: macOS Keychain Decryption Flaw",
+    "date": "September 2025",
+    "summary": "A vulnerability in macOS allowed decryption of Keychain items and iOS apps without authentication. Disclosed at Nullcon Berlin, patch pending.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-24204"
+  },
+  {
+    "title": "CVE-2025-53690: Sitecore XM/XP Zero-Day",
+    "date": "September 2025",
+    "summary": "A deserialization vulnerability in Sitecore Experience Manager & Platform is actively exploited, enabling remote code execution via ViewState.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-53690"
+  },
+  {
+    "title": "CVE-2023-50224 & CVE-2025-9377: TP-Link Router Flaws",
+    "date": "September 2025",
+    "summary": "CISA warned of two TP-Link router vulnerabilities actively exploited in the wild. Users must patch before the September 24, 2025 deadline.",
+    "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  },
+  {
+    "title": "CVE-2025-8067: Linux UDisks Daemon OOB Read",
+    "date": "September 2025",
+    "summary": "A local out-of-bounds read vulnerability in UDisks could allow privilege escalation. Linux users are advised to update immediately.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-8067"
+  },
+  {
+    "title": "CVE-2025-55177 & CVE-2025-43300: WhatsApp Zero-Click Exploits",
+    "date": "September 2025",
+    "summary": "Zero-click vulnerabilities in WhatsApp for iOS/macOS were exploited in spyware campaigns. Update to the latest version and enable Lockdown Mode.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-55177"
+  },
+  {
+    "title": "CVE-2025-7775, 7776, 8424: Citrix NetScaler Critical Bugs",
+    "date": "September 2025",
+    "summary": "Multiple Citrix NetScaler ADC & Gateway flaws, including CVE-2025-7775 (CVSS 9.2), are exploited in the wild. Patching is urgent.",
+    "link": "https://support.citrix.com/article/CTX74944"
+  },
+  {
+    "title": "CVE-2025-41408: New NVD Entry",
+    "date": "September 2025",
+    "summary": "A recently published CVE with limited details is under review. Security teams should monitor NVD updates closely for mitigation guidance.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-41408"
+  }
 ];
 
 export default function Blog() {
