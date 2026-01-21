@@ -20,6 +20,7 @@ export default function Nav() {
           <div className="hidden md:flex space-x-8">
             <Link to="/about" className="text-accent hover:text-highlight font-semibold transition">About</Link>
             <Link to="/skills" className="text-accent hover:text-highlight font-semibold transition">Skills</Link>
+            <Link to="/projects" className="text-accent hover:text-highlight font-semibold transition">Projects</Link>
             <Link to="/certifications" className="text-accent hover:text-highlight font-semibold transition">Certifications</Link>
             <Link to="/blog" className="text-accent hover:text-highlight font-semibold transition">Blog</Link>
             <Link to="/contact" className="text-accent hover:text-highlight font-semibold transition">Contact</Link>
@@ -42,6 +43,7 @@ export default function Nav() {
             <Link to="/about" className="text-accent hover:text-highlight font-semibold transition" onClick={() => setMenuOpen(false)}>About</Link>
             <Link to="/skills" className="text-accent hover:text-highlight font-semibold transition" onClick={() => setMenuOpen(false)}>Skills</Link>
             <Link to="/certifications" className="text-accent hover:text-highlight font-semibold transition" onClick={() => setMenuOpen(false)}>Certifications</Link>
+            <Link to="/projects" className="text-accent hover:text-highlight font-semibold transition" onClick={() => setMenuOpen(false)}>Projects</Link>
             <Link to="/blog" className="text-accent hover:text-highlight font-semibold transition" onClick={() => setMenuOpen(false)}>Blog</Link>
             <Link to="/contact" className="text-accent hover:text-highlight font-semibold transition" onClick={() => setMenuOpen(false)}>Contact</Link>
           </div>

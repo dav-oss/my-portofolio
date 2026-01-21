@@ -3,6 +3,7 @@ import React from 'react';
 export default function Certifications() {
   const certs = [
     "Linux Foundation: KCNA (Kubernetes and Cloud Native Associate)",
+    "Officially CCNA (Cisco Certified Network Associate)",
     "Cisco Network Academy: CCNA 1: Introduction to Networks",
     "Cisco Network Academy: CCNA 2: Switching, Routing, and Wireless Essentials",
     "Cisco Network Academy: CCNA 3: Enterprise Networking, Security, and Automation",

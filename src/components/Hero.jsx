@@ -12,7 +12,7 @@ export default function Hero() {
         />
         <div>
           <h1 className="font-display text-5xl font-extrabold text-primary mb-2">David Muendo Musau</h1>
-          <p className="mt-2 text-xl text-text font-medium">Aspiring Network Engineer | CCNA Student | Cybersecurity Enthusiast</p>
+          <p className="mt-2 text-xl text-text font-medium">Aspiring Network Engineer | CCNA(Cisco Certified Network Associate) Certified | Cybersecurity Enthusiast</p>
           <a
             href="#contact"
             className="mt-6 inline-block bg-highlight text-white px-8 py-3 rounded-full shadow hover:bg-accent transition"

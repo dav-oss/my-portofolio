@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Certifications from './components/Certifications';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Nav from './components/Nav';
 import WelcomePopup from './components/WelcomePopup';
@@ -19,6 +20,7 @@ function Home() {
       <About />
       <Skills />
       <Certifications />
+      <Projects />
       <Contact />
     </>
   );
@@ -34,10 +36,12 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path='/certifications' element={<Certifications />} />
+          <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/skills' element={<Skills />} />
         </Routes>
       </Router>
+
     </div>
   );
 }
