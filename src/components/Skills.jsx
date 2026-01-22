@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Skills() {
   const skills = [
-    "Systems Development (Web, Desktop and Mobile)","Network Administration", "Routing Protocols (OSPF, EIGRP, RIP)", "VLANs & Subnetting",
+    "Systems Development (Web, Desktop and Mobile)","Network Administration", "Routing Protocols (OSPF, EIGRP, BGP, IS-IS)", "VLANs & Subnetting",
     "Cybersecurity Fundamentals", "Kubernetes", "Linux Administration", 
-    "Python, C, C#", "Cisco Packet Tracer", "Wireshark", "Soft Skills: Communication & Teamwork"
+    "Python, C, C#", "Wireshark","Packet Logic","Cambium", "Soft Skills: Communication & Teamwork"
   ];
 
   return (
