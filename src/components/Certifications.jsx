@@ -4,12 +4,9 @@ export default function Certifications() {
   const certs = [
     "Linux Foundation: KCNA (Kubernetes and Cloud Native Associate)",
     "Officially CCNA (Cisco Certified Network Associate)",
-    "Cisco Network Academy: CCNA 1: Introduction to Networks",
-    "Cisco Network Academy: CCNA 2: Switching, Routing, and Wireless Essentials",
-    "Cisco Network Academy: CCNA 3: Enterprise Networking, Security, and Automation",
+    "Fortinet Certified Associate (FCA) in Cyber Security",
     "Linux Foundation – Kubernetes and Cloud Native Essentials",
     "Introduction to Cybersecurity – Cisco",
-    "Networking Basics – Cisco",
     "LinkedIn Learning – Ethical Hacking Series",
     "Python for Network Engineers – LinkedIn Learning"
   ];
